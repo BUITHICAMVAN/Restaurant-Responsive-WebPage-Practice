@@ -11,10 +11,16 @@
 }
 
 footer {
-    background-color: rgb(184, 159, 184);
-    margin: 20px auto;
-    padding: 20px auto;
+    background-color: rgb(216, 200, 216);
+    margin: 0px auto;
+    padding: 20px 10px 20px 10px;
 }
+
+/* .footer {
+    background-color: lightgrey;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+} */
 
 footer.container {
     margin: 10px auto;
