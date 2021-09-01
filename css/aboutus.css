@@ -1,0 +1,28 @@
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: rgb(120, 74, 163);
+    color: floralwhite;
+}
+
+.row-header{
+     padding: 20px 50px 0px;
+     font-family: 'Segoe UI',Tahoma, Geneva, Verdana,sans-serif;
+}
+
+footer {
+    background-color: rgb(184, 159, 184);
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+footer.container {
+    margin: 10px auto;
+    padding: 10px auto;
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
