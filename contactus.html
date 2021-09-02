@@ -18,6 +18,7 @@
 
 <body>
 
+    <!-- Navigation bar -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -29,12 +30,13 @@
                         <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class=" 1fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>1
+                        <li class="nav-item active"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Header: Restaurant name, Intro -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -48,23 +50,29 @@
         </div>
     </header>
 
+    <!-- Body: Breadcums, Page title,  -->
     <div class="container">
+        
         <div class="row">
+            <!-- breadcums in Contact Us page -->
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contact Us</li>
             </ol>
+            <!-- title of the page -->
             <div class="col-12">
                <h3>Contact Us</h3>
                <hr>
             </div>
         </div>
 
+            
         <div class="row row-content">
            <div class="col-12">
               <h3>Location Information</h3>
            </div>
             <div class="col-12 col-sm-4 offset-sm-1">
+                <!-- offset-sm-1 content will be pushed right 1 unit from sm to xl -->
                    <h5>Our Address</h5>
                     <address style="font-size: 100%">
 		              121, Clear Water Bay Road<br>
@@ -87,19 +95,89 @@
                 </div>
             </div>
         </div>
+        <hr>
 
         <div class="row row-content">
-           <div class="col-12">
+           <div class="col-12 ">
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form>
+                    <!-- divide forms into several roles -->
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label"> First Name </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label"> Last Name </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="telnum" class=" col-12 col-md-2 col-form-label"> Contact Tel </label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                        </div>
+
+                        <div class="col-7 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="emailed" class=" col-md-2 col-form-label"> Email </label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-5 offset-md-2">
+                            <!-- right by 2 collums -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input"
+                                name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">
+                                    <strong> May we contact you</strong>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 offset-md-1">
+                            <select class="form-control">
+                                <option> Telephone </option>
+                                <option>Email </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="Feedback" class=" col-md-2 col-form-label"> Email </label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="Feedback" name="Feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary" >
+                                Send Feedback
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
             </div>
              <div class="col-12 col-md">
             </div>
        </div>
     </div>
 
+    
     <footer class="footer">
         <div class="container">
             <div class="row">             
