@@ -23,7 +23,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Ristorant Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="./assets/img/logo.png" alt="" height="30" width="41"></a>
                 <div class="collapse navbar-collapse" id="Navbar">
                    <ul class="navbar-nav mr-auto">
                         <!-- mr-auto: the right margin will be set as much as possible, content be pushed left -->
@@ -44,7 +44,8 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="./assets/img/logo.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -68,6 +69,26 @@
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                 <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
+<!-- Adding Image has 3 ways:
+<div class="card">
+    <img src="" alt="">
+    <div class="card-body"></div>
+</div> 
+
+image can be displayed right or left
+<div class="media">
+    <img class="d-flex mr-3 img-thumbnail align-self-center"
+    src="" alt="">
+    <div class="media-body"></div>
+</div>
+
+video, 
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src=""></iframe>
+</div>
+
+*<iframe>, <embed>, <video>, <object> 
+-->
             <div class ="col-sm">
                 <div class="card">
                     <h3 class="card-header bg-primary text-white">Facks at a glance</h3>
@@ -127,33 +148,38 @@
                     <caption>Data</caption>
                     <thead class="thead-dark">
                         <tr>
-                            <th>&nbsp;</th>
-                            <th>2013</th>
-                            <th>2014</th>
-                            <th>2015</th>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">2013</th>
+                            <th scope="col">2014</th>
+                            <th scope="col">2015</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>Employees</th>
+                            <!-- 
+col	Defines that the associated cell is a header for a column.
+row	Defines that the associated cell is a header for a row.
+colgroup Defines that the associated cell is a header for a column group.
+rowgroup Defines that the associated cell is a header for a row group. -->
+                            <th scope="col">Employees</th>
                                 <td>15</td>
                                 <td>30</td>
                                 <td>40</td>
                         </tr>
                          <tr>
-                                <th>Guests Served</th>
+                                <th scope="col">Guests Served</th>
                                 <td>15000</td>
                                 <td>45000</td>
                                 <td>100,000</td>
                             </tr>
                             <tr>
-                                <th>Special Events</th>
+                                <th scope="col">Special Events</th>
                                 <td>3</td>
                                 <td>20</td>
                                 <td>45</td>
                             </tr>
                             <tr>
-                                <th>Annual Turnover</th>
+                                <th scope="col">Annual Turnover</th>
                                 <td>$251,325</td>
                                 <td>$1,250,375</td>
                                 <td>~$3,000,000</td>
